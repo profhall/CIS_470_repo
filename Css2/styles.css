@@ -1,0 +1,75 @@
+/*   * set's rules for the entire page    */
+* {
+    box-sizing: border-box; /*This line makes sure the width and height are the correct sizes no matter the padding */
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+}
+/*Grid Created*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Settings for row divs */
+.row{
+    background-color: lightblue;
+    padding: 25px;
+    border: .5px solid yellow;
+    overflow: auto;  /*erase this line and watch what happens to the rows*/
+}
+
+[class*='col-'] { /* This css rule applies to any element that has the string "col-" in its class*/
+    float: left;
+    min-height: 1px;
+    /*-- our gutter inside each cell around it's content, change the value to see how it works--*/
+    padding: 0px;
+    /*overflow:auto ;*/
+    border: .5px solid red;
+    /**********Another way to set background color: Change the number values in it and see what happens**********/
+    background: rgba(76, 175, 80, 0.3);
+}
+
+/*Mobile Settings*/
+@media screen and (max-width: 500px) {
+    body {
+        background-color: lightgreen;
+    }
+    .m-col-1 {width: 25%;}
+    .m-col-2 {width: 50%;}
+    .m-col-3 {width: 75%;}
+    .m-col-4 {width: 100%;}
+}
+.titleImg{
+    margin: auto ;
+    width: 75%;
+    display: block;
+}
+/*
+.titleImg2{
+    margin: auto ;
+    width: 50%;
+    display: block;
+}
+*/
+
+
+.scrolltextDiv{
+    background-color: azure;
+    width: 95%;
+    height: 40%;
+    margin: auto;
+    overflow: scroll;
+    text-align: left;
+}
